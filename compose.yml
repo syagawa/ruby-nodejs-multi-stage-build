@@ -1,0 +1,8 @@
+services:
+  ruby-node:
+    build:
+      context: ./
+      dockerfile: "Dockerfile"
+    volumes:
+      - "./work:/app/work"
+      - "./entrypoint.sh:/app/entrypoint.sh"
